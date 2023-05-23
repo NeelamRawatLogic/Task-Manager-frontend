@@ -1,0 +1,3 @@
+<app-task-form (addTask)="addTask($event)"></app-task-form>
+<app-task-list [tasks]="tasks$ | async" [selectedTask]="selectedTask" (editTask)="selectedTask = $event"
+  (deleteTask)="deleteTask($event)" (updateTask)="updateTask($event)"></app-task-list>

@@ -1,0 +1,32 @@
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Actions</th>
+    </tr>
+    <ng-container *ngIf="tasks">
+        <tr *ngFor="let task of tasks">
+            <ng-container *ngIf="selectedTask !== task; else editRow">
+                <td>{{ task.title }}</td>
+                <td>{{ task.description }}</td>
+                <td>
+                    <button (click)="selectedTask = task">Edit</button>
+                    <button (click)="removeTask(task.id)">Delete</button>
+                </td>
+            </ng-container>
+            <ng-template #editRow>
+                <td>
+                    <input type="text" [(ngModel)]="task.title" placeholder="Task Title" required>
+                </td>
+                <td>
+                    <input type="text" [(ngModel)]="task.description" placeholder="Task Description" required>
+                </td>
+                <td>
+                    <button (click)="onUpdateTask(task)">Update</button>
+                    <button (click)="selectedTask = {}">Cancel</button>
+                </td>
+            </ng-template>
+        </tr>
+    </ng-container>
+
+</table>

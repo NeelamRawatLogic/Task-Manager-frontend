@@ -1,0 +1,13 @@
+<h2>Task Manager</h2>
+<div *ngIf="(!newTask.description || !newTask.title ) && isFormSubmitted" class="validation-error">Please enter all
+    details.</div>
+<form (submit)="submitForm()">
+    <input type="text" name="title" [(ngModel)]="newTask.title" [ngModelOptions]="{ standalone: true }"
+        placeholder="Task Title" required>
+    <input type="text" name="description" [(ngModel)]="newTask.description" [ngModelOptions]="{ standalone: true }"
+        placeholder="Task Description" required>
+
+    <button type="submit">Add Task</button>
+
+
+</form>

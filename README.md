@@ -1,27 +1,44 @@
-# TaskManagerFrontend
+# Task Manager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+Task Manager is a simple web application built with Angular that allows you to manage tasks. You can add, edit, and delete tasks using the user-friendly interface.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Add new tasks with a title and description.
+- Edit existing tasks to update their title and description.
+- Delete tasks to remove them from the task list.
+- User-friendly interface with a responsive design.
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Build
+### Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Node.js and npm: Make sure you have Node.js and npm installed on your machine. You can download them from the official Node.js website: [https://nodejs.org](https://nodejs.org).
 
-## Running unit tests
+### Installing
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository:
+2. Navigate to the project directory:
+3. Install the dependencies:
 
-## Running end-to-end tests
+### Running the Application
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+To run the application locally, use the following command:
 
-## Further help
+The application will be served at `http://localhost:4200/`. Open this URL in your web browser to access the Task Manager.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Built With
+
+- Angular - A popular JavaScript framework for building web applications.
+- Bootstrap - A CSS framework for responsive web design.
+- Font Awesome - A library of scalable vector icons.
+
+## Authors
+
+- Your Name - [Your GitHub Profile](https://github.com/your-username)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
