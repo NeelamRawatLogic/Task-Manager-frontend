@@ -26,16 +26,24 @@ export class TaskComponent implements OnInit {
     });
   }
 
+  resetFormTask(): void {
+    this.newTask = {};
+  }
+
+  resetSelectedTask(): void {
+    this.selectedTask = {};
+  }
+
   addTask(task: Task): void {
     this.taskService.addTask(task).subscribe((task) => {
-      this.newTask = {};
+      this.resetFormTask();
       this.fetchTasks();
     });
   }
 
   updateTask(task: Task): void {
     this.taskService.updateTask(task).subscribe((updatedTask) => {
-      this.selectedTask = {};
+      this.resetSelectedTask();
       this.fetchTasks();
     });
   }
