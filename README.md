@@ -19,13 +19,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-1. Clone the repository:
-2. Navigate to the project directory:
-3. Install the dependencies:
+1. Clone the repository: `git clone https://github.com/NeelamRawatLogic/Task-Manager-frontend.git`
+2. Navigate to the project directory: `cd Task-Manager-frontend`
+3. Install the dependencies: `npm install`
 
 ### Running the Application
 
-To run the application locally, use the following command:
+To run the application locally, use the following command: `npm start`
 
 The application will be served at `http://localhost:4200/`. Open this URL in your web browser to access the Task Manager.
 
@@ -37,8 +37,5 @@ The application will be served at `http://localhost:4200/`. Open this URL in you
 
 ## Authors
 
-- Your Name - [Your GitHub Profile](https://github.com/your-username)
+- Neelam Rawat - [GitHub Profile](https://github.com/NeelamRawatLogic)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
